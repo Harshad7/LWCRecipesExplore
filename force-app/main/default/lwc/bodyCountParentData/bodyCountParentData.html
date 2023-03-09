@@ -1,0 +1,21 @@
+<template>
+
+    <lightning-card title="New Visitor Entered">
+        
+        <template if:true={name}>
+        
+            <div class="slds-p-around_medium">
+                A new visitor has entered </br>
+                Name : {name}  </br>
+                Email: {email} </br>
+            </div>
+            
+        </template>
+
+     <c-new-visitor-information
+     onformsubmit={handleChildFormSubmit}
+     >
+     </c-new-visitor-information>
+    </lightning-card>
+
+</template>
