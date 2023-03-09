@@ -1,0 +1,13 @@
+<template>
+
+    <lightning-card title="Shopping Mall Body Count">
+
+        <h3 class="slds-p-around_medium">Total People in the mall are : {peopleCount}</h3>
+        <c-add-remove-people-count
+        onadd={addPeople}
+        onsubtract={subtractPeople}
+        ></c-add-remove-people-count>
+
+    </lightning-card>
+    
+</template>
