@@ -6,7 +6,6 @@ export default class NewVisitorInformation extends LightningElement {
     userEmail;
 
     handleNameChange(event){
-        console.log('name entered')
         this.userName = event.detail.value;
     }
 
@@ -15,8 +14,6 @@ export default class NewVisitorInformation extends LightningElement {
     }
 
     handleSubmit(){
-        console.log('submit')
-        console.log(this.userName)
        const newEvent = new CustomEvent('formsubmit', {
             detail : {
                 name : this.userName,

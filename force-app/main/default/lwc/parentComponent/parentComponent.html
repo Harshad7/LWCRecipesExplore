@@ -1,0 +1,14 @@
+<template>
+
+    <lightning-card title="Parent Component">
+
+        <div onbubblefalse={handleChildEventOnDiv} onbubbletrue={handleChildEventOnDiv}>
+
+        <c-child-component onbubblefalse={handleChildEvent} onbubbletrue={handleChildEvent}>
+            
+        </c-child-component>
+
+    </div>
+    </lightning-card>
+    
+</template>
